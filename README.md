@@ -1,16 +1,28 @@
-### Hi there 👋
+## Hi, welcome to Marshall Sun's user center! 👋
 
-<!--
-**Marshall-Sun/Marshall-Sun** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+<a href="#"><img src="https://github-readme-stats.vercel.app/api?username=marshall-sun&hide_border=true&show_icons=true&theme=buefy&icon_color=87c438&title_color=87c438&line_height=34"/></a>
+<a href="#"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=marshall-sun&hide=html&hide_border=true&icon_color=87c438&title_color=87c438"/></a>
+</p>
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+```javascript
+const MySelf = (function () {
+  let instance = null;
+  return function () {
+    this.personalData = {
+      name: "Marshall Sun",
+      university: "Northeastern University",
+      blog: "https://msun.work",
+      github: "https://github.com/Marshall-Sun",
+    };
+    if (instance) return instance;
+    return (instance = this);
+  };
+})();
+
+MySelf.prototype.introduce = function () {
+  console.table(this.personalData);
+};
+```
