@@ -7,6 +7,7 @@ const MySelf = (function () {
     this.personalData = {
       name: "Marshall Sun",
       university: "Northeastern University",
+      intern: "Institute of Automation, Chinese Academy of Sciences",
       blog: "https://msun.work",
       github: "https://github.com/Marshall-Sun",
     };
