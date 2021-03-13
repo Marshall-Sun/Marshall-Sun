@@ -1,24 +1,23 @@
 ## Hi, welcome to Marshall Sun's user page! 👋
 
 ```javascript
-const MySelf = (function () {
-  let instance = null;
-  return function () {
-    this.personalData = {
-      name: "Marshall Sun",
-      university: "Northeastern University",
-      intern: "Institute of Automation, Chinese Academy of Sciences",
-      blog: "https://msun.work",
-      github: "https://github.com/Marshall-Sun",
-    };
-    if (instance) return instance;
-    return (instance = this);
-  };
-})();
-
-MySelf.prototype.introduce = function () {
-  console.table(this.personalData);
-};
+class MySelf {
+  constructor() {
+    if (!MySelf.instance) {
+      const data = Symbol();
+      this[data] = {
+        name: "Marshall Sun",
+        university: "Northeastern University",
+        intern: "Institute of Automation, Chinese Academy of Sciences",
+        github: "https://github.com/Marshall-Sun",
+        blog: "https://msun.site",
+      };
+      this.introduce = () => console.table(this[data]);
+      MySelf.instance = this;
+    }
+    return MySelf.instance;
+  }
+}
 ```
 
 ---
