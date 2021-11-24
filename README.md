@@ -8,7 +8,7 @@ class MySelf {
       this[data] = {
         name: "Marshall Sun",
         university: "Northeastern University",
-        intern: "Institute of Automation, Chinese Academy of Sciences",
+        company: "Bytedance",
         github: "https://github.com/Marshall-Sun",
         blog: "https://msun.site",
       };
