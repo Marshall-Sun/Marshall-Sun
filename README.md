@@ -10,7 +10,6 @@ class MySelf {
         university: "Northeastern University",
         company: "Bytedance",
         github: "https://github.com/Marshall-Sun",
-        blog: "https://msun.site",
       };
       this.introduce = () => console.table(this[data]);
       MySelf.instance = this;
